@@ -1,2 +1,3 @@
 # covid-19data
 Acquisition of open data from the mhlw.go.jp, pref.fukuoka.jp, and city.kitakyushu.jp
+厚生労働省、福岡県、北九州市のオープンデータを取得します。
