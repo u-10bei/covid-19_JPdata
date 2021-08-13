@@ -41,4 +41,4 @@ mhlwD %>% subset(Pref==c("ALL"),c(Date,Deaths.cumulative)) -> JPD
 JPC %>% left_join(mhlwT,by="Date") %>%
   left_join(JPR,by="Date") %>%
   left_join(JPD,by="Date") %>%
-  write_csv("./data/COVID-19_JP2.csv")
+  write_csv("./data/COVID-19_JP.csv","")
