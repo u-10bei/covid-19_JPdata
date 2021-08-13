@@ -25,3 +25,19 @@ ktqURL %>% paste("550f889f-f758-41e5-83c0-2e631d41af06/",sep="") %>%
   paste("resource/888afc2d-61ba-4f62-8494-c8022fcd8548/",sep="") %>%
   paste("download/401005_kitakyushu_covid19_confirm_negative.csv",sep="") %>%
   read_csv(col_names=TRUE,locale=locale(encoding="SHIFT-JIS")) -> ktqN
+
+# 列名の再定義
+c("Date","Pref","Positive") -> colnames(mhlwC)
+c("Date","Pref","Inpatient","Discharged","Unconfirmed") -> colnames(mhlwR)
+c("Date","Pref","Deaths.cumulative") -> colnames(mhlwD)
+c("Date","Tesed") -> colnames(mhlwT)
+
+# 全国の状況のみ抽出
+mhlwC %>% subset(Pref==c("ALL"),c(Date,Positive)) -> JPC
+mhlwR %>% subset(Pref==c("ALL"),c(Date,Inpatient,Discharged,Unconfirmed)) -> JPR
+mhlwD %>% subset(Pref==c("ALL"),c(Date,Deaths.cumulative)) -> JPD
+
+# ＣＳＶの結合
+JPC %>% left_join(mhlwT,by="Date") %>%
+  left_join(JPR,by="Date") %>%
+  left_join(JPD,by="Date") -> covid19JP
