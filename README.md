@@ -1,4 +1,4 @@
-# covid-19data
+# covid-19_JPdata
 Acquisition of open data from the mhlw.go.jp and city.kitakyushu.jp<br>
 Data is updated daily after 11pm.<br>
 厚生労働省、北九州市のオープンデータを取得します。<br>
