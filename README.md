@@ -9,6 +9,7 @@ Data is updated daily after 11pm.<br>
 |-|-|-|-|
 |CreateData.R|4.0.5|tidyverse|pipe %>%|
 |CreateData410.R|4.1.0|readr,dplyr|pipe \|>|
+
 ## データ取得元<br>
 **厚生労働省**：https://www.mhlw.go.jp/stf/covid-19/open-data.html <br>
 **北九州市**：https://ckan.open-governmentdata.org/organization/kitakyushu-city
