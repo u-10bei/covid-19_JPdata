@@ -7,7 +7,7 @@ Data is updated daily after 11pm.<br>
 ## CreateData.R and CreateData410.R
 
 |Name<br>（名前）|Version<br>（バージョン）|Library<br>（ライブラリ）|memo<br>（備考）|
-|-|-|-|-|
+|---|---|---|---|
 |CreateData.R|4.0.5|tidyverse|pipe %>%|
 |CreateData410.R|4.1.0|readr,dplyr|pipe \|>|
 
