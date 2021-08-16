@@ -7,3 +7,4 @@ set C="%A%%B%"
 git add .
 git commit -a -m %C%
 git push --all origin
+pause
