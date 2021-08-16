@@ -33,6 +33,7 @@ JPdata.all |> subset(Pref==c("ALL")) |>
 
 # 各県の状況の書き出し
 JPdata.all |> subset(Pref!=c("ALL")) |>
+  select(Date,Pref,Positive,Inpatient,Discharged,Unconfirmed) |>
   write_csv("./data/COVID-19_PREF.csv","")
 
 # 北九州データ
