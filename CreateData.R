@@ -22,18 +22,20 @@ c("https://www.mhlw.go.jp/content/pcr_tested_daily.csv") %>%
 c("Date","Pref","Positive") -> colnames(mhlwC)
 c("Date","Pref","Inpatient","Discharged","Unconfirmed") -> colnames(mhlwR)
 c("Date","Pref","Deaths.cumulative") -> colnames(mhlwD)
-c("Date","Tesed") -> colnames(mhlwT)
+c("Date","Tested") -> colnames(mhlwT)
 
-# 全国の状況のみ抽出
-mhlwC %>% subset(Pref==c("ALL"),c(Date,Positive)) -> JPC
-mhlwR %>% subset(Pref==c("ALL"),c(Date,Inpatient,Discharged,Unconfirmed)) -> JPR
-mhlwD %>% subset(Pref==c("ALL"),c(Date,Deaths.cumulative)) -> JPD
+# データの結合
+mhlwC %>% left_join(mhlwT,by="Date") %>%
+  left_join(mhlwR,by=c("Date","Pref")) %>%
+  left_join(mhlwD,by=c("Date","Pref")) -> JPdata.all
 
-# ＣＳＶの結合、書き出し
-JPC %>% left_join(mhlwT,by="Date") %>%
-  left_join(JPR,by="Date") %>%
-  left_join(JPD,by="Date") %>%
+# 全国データの書き出し
+JPdata.all %>% subset(Pref==c("ALL")) %>%
   write_csv("./data/COVID-19_JP.csv","")
+
+# 各県の状況の書き出し
+JPdata.all %>% subset(Pref!=c("ALL")) %>%
+  write_csv("./data/COVID-19_PREF.csv","")
 
 # 北九州データ
 # オープンデータのあるＵＲＬを変数に格納
@@ -58,4 +60,4 @@ ktqT %>% inner_join(ktqN,by="Date") %>%
   select(Date,Tested,Negative) %>%
   mutate(Positive=Tested-Negative) %>%
   mutate(Prate=Positive/Tested*100) %>%
-  write_csv("./data/COVID-19_KTQTEST.csv","")
+  write_csv("./data/COVID-19_KTQ.csv","")
