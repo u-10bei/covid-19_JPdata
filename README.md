@@ -24,4 +24,5 @@ Data is updated daily after 11pm.<br>
 
 |Reference site<br>（参考サイト）|Adress<br>（アドレス）|memo<br>（備考）|
 |---|---|---|
-|Heavy Watal|[readr — 高速で柔軟なテーブル読み込み](https://heavywatal.github.io/)|tidyverse,readr,dlpyr|
+|Heavy Watal|[readr — 高速で柔軟なテーブル読み込み](https://heavywatal.github.io/rstats/readr.html)|readr|
+|Heavy Watal|[dplyr — 高速data.frame処理](https://heavywatal.github.io/rstats/dplyr.html)|dlpyr|
