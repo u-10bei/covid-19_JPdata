@@ -19,3 +19,9 @@ Data is updated daily after 11pm.<br>
 [**全国データ**：COVID-19_JP.csv](./data/COVID-19_JP.csv)<br>
 [**各県データ**：COVID-19_PREF.csv](./data/COVID-19_PREF.csv)<br>
 [**北九州市データ**：COVID-19_KTQ.csv](./data/COVID-19_KTQ.csv)<br>
+
+## 参考ページ<br>
+
+|Reference site<br>（参考サイト）|Adress<br>（アドレス）|memo<br>（備考）|
+|---|---|---|
+|Heavy Watal|[readr — 高速で柔軟なテーブル読み込み](https://heavywatal.github.io/)|tidyverse,readr,dlpyr|
