@@ -11,16 +11,16 @@ Data is updated daily after 11pm.<br>
 |CreateData.R|4.0.5|tidyverse|pipe %>%|
 |CreateData410.R|4.1.0|readr,dplyr|pipe \|>|
 
-## データ取得元<br>
+## Data source<br>（データ取得元）
 [**厚生労働省**：https://www.mhlw.go.jp/stf/covid-19/open-data.html](https://www.mhlw.go.jp/stf/covid-19/open-data.html) <br>
 [**北九州市**：https://ckan.open-governmentdata.org/organization/kitakyushu-city](https://ckan.open-governmentdata.org/organization/kitakyushu-city)
 
-## 出力データ<br>
-[**全国データ**：COVID-19_JP.csv](./data/COVID-19_JP.csv)<br>
-[**各県データ**：COVID-19_PREF.csv](./data/COVID-19_PREF.csv)<br>
-[**北九州市データ**：COVID-19_KTQ.csv](./data/COVID-19_KTQ.csv)<br>
+## Output data<br>（出力データ）
+[**National data（全国データ）**：COVID-19_JP.csv](./data/COVID-19_JP.csv)<br>
+[**Prefectural data（各県データ）**：COVID-19_PREF.csv](./data/COVID-19_PREF.csv)<br>
+[**Kitakyushu City Data（北九州市データ）**：COVID-19_KTQ.csv](./data/COVID-19_KTQ.csv)<br>
 
-## 参考ページ<br>
+## Reference Page<br>（参考ページ）
 
 |Reference site<br>（参考サイト）|Adress<br>（アドレス）|memo<br>（備考）|
 |---|---|---|
