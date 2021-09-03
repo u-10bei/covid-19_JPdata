@@ -16,9 +16,9 @@ Data is updated daily after 11pm.<br>
 ### **Kitakyushu City（北九州市）**<br>[https://ckan.open-governmentdata.org/organization/kitakyushu-city](https://ckan.open-governmentdata.org/organization/kitakyushu-city)
 
 ## Output data<br>（出力データ）
-[**National data（全国データ）**：COVID-19_JP.csv](./data/COVID-19_JP.csv)<br>
-[**Prefectural data（各県データ）**：COVID-19_PREF.csv](./data/COVID-19_PREF.csv)<br>
-[**Kitakyushu City Data（北九州市データ）**：COVID-19_KTQ.csv](./data/COVID-19_KTQ.csv)<br>
+[**National data（全国データ）**：COVID-19_JP.csv](https://github.com/u-10bei/covid-19_JPdata/blob/main/data/COVID-19_JP.csv)<br>
+[**Prefectural data（各県データ）**：COVID-19_PREF.csv](https://github.com/u-10bei/covid-19_JPdata/blob/main/data/COVID-19_PREF.csv)<br>
+[**Kitakyushu City Data（北九州市データ）**：COVID-19_KTQ.csv](https://github.com/u-10bei/covid-19_JPdata/blob/main/data/COVID-19_KTQ.csv)<br>
 
 ## Reference Page<br>（参考ページ）
 
