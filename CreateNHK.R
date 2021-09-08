@@ -21,12 +21,17 @@ c("Pref","Population") -> colnames(POP)
 
 # データの整形
 as.Date(NHKP$Date) -> NHKP$Date
-NHKP |> filter(NHKP$Date >  last(NHKP$Date)-7) |>
+NHKP |> filter(NHKP$Date > last(NHKP$Date)-7) |>
   group_by(Pref) |>
-  summarise(Pos=sum(Positive)) -> NHKT
-NHKT |> inner_join(POP,by=c("Pref"="Pref")) |>
-  mutate(per100K=Pos/Population*100) -> NHKTT
-  NHKTT[order(NHKTT$per100K,decreasing=T),] -> NHKTT
+  summarise(Pos7=sum(Positive)) -> NHKT
+NHKP |> filter(NHKP$Date == last(NHKP$Date)) |>
+  group_by(Pref) |>
+  summarise(Pos=sum(Positive)) -> NHKN
+NHKT |> inner_join(NHKN,by=c("Pref"="Pref")) |>
+  inner_join(POP,by=c("Pref"="Pref")) |>
+  mutate(per100K7=Pos7/Population*100) |>
+  mutate(per100K=Pos/Population*100)-> NHKTT
+  NHKTT[order(NHKTT$per100K7,decreasing=T),] -> NHKTT
 
 # 各県の状況の書き出し
 NHKTT |> write_csv("data/COVID-19_NHK.csv","")
