@@ -1,6 +1,7 @@
 # ライブラリの読み込み
  library(readr)
  library(dplyr)
+ library(tidyr)
 
 # 全国データ
 # オープンデータのあるＵＲＬを変数に格納
@@ -24,13 +25,18 @@ as.Date(NHKP$Date) -> NHKP$Date
 NHKP |> filter(NHKP$Date > last(NHKP$Date)-7) |>
   group_by(Pref) |>
   summarise(Pos7=sum(Positive)) -> NHKT
+NHKP |> filter(NHKP$Date > last(NHKP$Date)-7) |>
+  select(Date,Pref,Positive) |>
+  pivot_wider(names_from = "Date",
+              values_from = "Positive") -> NHKPP
 NHKP |> filter(NHKP$Date == last(NHKP$Date)) |>
   group_by(Pref) |>
   summarise(Pos=sum(Positive)) -> NHKN
 NHKT |> inner_join(NHKN,by=c("Pref"="Pref")) |>
   inner_join(POP,by=c("Pref"="Pref")) |>
   mutate(per100K7=Pos7/Population*100) |>
-  mutate(per100K=Pos/Population*100)-> NHKTT
+  mutate(per100K=Pos/Population*100) |>
+  inner_join(NHKPP,by=c("Pref"="Pref")) -> NHKTT
   NHKTT[order(NHKTT$per100K7,decreasing=T),] -> NHKTT
 
 # 各県の状況の書き出し
