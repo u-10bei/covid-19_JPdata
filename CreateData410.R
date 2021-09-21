@@ -42,7 +42,7 @@ c("https://ckan.open-governmentdata.org/dataset/") -> ktqURL
 
 # ネット上のファイル読み込み
 ktqURL |> paste("bdb93937-3522-4c54-bf99-1ff24f51eb9d/",sep="") |>
-  paste("resource/f9bbb2bd-cb82-4395-8d7a-18566784c2bc/",sep="") |>
+  paste("resource/1bbf3ac2-0a3c-4846-a209-95f7d752e90e/",sep="") |>
   paste("download/401005_kitakyushu_covid19_test_count.csv",sep="") |>
   read_csv(col_names=TRUE,locale=locale(encoding="SHIFT-JIS")) -> ktqT
 ktqURL |> paste("550f889f-f758-41e5-83c0-2e631d41af06/",sep="") |>
