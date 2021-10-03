@@ -16,12 +16,13 @@ c("data/Population_Pref_20191001.csv") |>
   select(X2,X3) -> POP
 
 # 列名の再定義
-c("Date","PrefCode","Pref",
-  "Positive","Pos.cumulative","Deaths","Deaths.cumulative") -> colnames(NHKP)
+c("Date","PrefCode","Pref","Positive","Pos.cumulative",
+  "Deaths","Deaths.cumulative","Pos.per100K") -> colnames(NHKP)
 c("Pref","Population") -> colnames(POP)
 
 # データの整形
 as.Date(NHKP$Date) -> NHKP$Date
+
 NHKP |> filter(NHKP$Date > last(NHKP$Date)-7) |>
   group_by(Pref) |>
   summarise(Pos7=sum(Positive)) -> NHKT
