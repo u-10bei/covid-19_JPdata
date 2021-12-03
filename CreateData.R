@@ -10,19 +10,40 @@ c("https://covid19.mhlw.go.jp/public/opendata/") -> mhlwURL
 
 # ネット上のファイル読み込み
 mhlwURL %>% paste("newly_confirmed_cases_daily.csv",sep="") %>%
-  read_csv() -> mhlwC
+  read_csv() -> mhlwCC
 mhlwURL %>% paste("requiring_inpatient_care_etc_daily.csv",sep="") %>%
-  read_csv() -> mhlwR
+  read_csv() -> mhlwRR
 mhlwURL %>% paste("deaths_cumulative_daily.csv",sep="") %>%
-  read_csv() -> mhlwD
+  read_csv() -> mhlwDD
 c("https://www.mhlw.go.jp/content/pcr_tested_daily.csv") %>%
   read_csv() -> mhlwT
 
 # 列名の再定義
-c("Date","Pref","Positive") -> colnames(mhlwC)
-c("Date","Pref","Inpatient","Discharged","Unconfirmed") -> colnames(mhlwR)
-c("Date","Pref","Deaths.cumulative") -> colnames(mhlwD)
 c("Date","Tested") -> colnames(mhlwT)
+
+# 空のデータフレーム作成
+data.frame(matrix(rep(NA,3),nrow=1))[numeric(0),] -> mhlwC
+data.frame(matrix(rep(NA,5),nrow=1))[numeric(0),] -> mhlwR
+data.frame(matrix(rep(NA,3),nrow=1))[numeric(0),] -> mhlwD
+
+#データ投入
+for(i in 2:49){
+  data.frame(mhlwCC[,1],names(mhlwCC[,i]),mhlwCC[,i]) -> df
+  c("Date","Pref","Positive") -> colnames(df)
+  rbind(mhlwC,df) -> mhlwC
+  data.frame(mhlwDD[,1],names(mhlwDD[,i]),mhlwDD[,i]) -> df
+  c("Date","Pref","Deaths.cumulative") -> colnames(df)
+  rbind(mhlwD,df) -> mhlwD
+}
+for(i in 2:49){
+  data.frame(mhlwRR[,1],
+             names(mhlwCC[,i]),
+             mhlwRR[,i*3-4],
+             mhlwRR[,i*3-3],
+             mhlwRR[,i*3-2]) -> df
+  c("Date","Pref","Inpatient","Discharged","Unconfirmed") -> colnames(df)
+  rbind(mhlwR,df) -> mhlwR
+}
 
 # データの結合
 mhlwC %>% left_join(mhlwT,by="Date") %>%
