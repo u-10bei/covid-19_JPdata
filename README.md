@@ -22,6 +22,7 @@ Data is updated daily after 5am.<br>
 ### **Ministry of Health, Labour and Welfare（厚生労働省）**<br>[https://covid19.mhlw.go.jp/extensions/public/index.html](https://covid19.mhlw.go.jp/extensions/public/index.html) <br>
 ### **Kitakyushu City（北九州市）**<br>[https://ckan.open-governmentdata.org/organization/kitakyushu-city](https://ckan.open-governmentdata.org/organization/kitakyushu-city)<br>
 ### **NHK**<br>[https://www3.nhk.or.jp/news/special/coronavirus/data/](https://www3.nhk.or.jp/news/special/coronavirus/data/)
+### **population（人口）**<br>[https://www.e-stat.go.jp/dbview?sid=0003445078](https://www.e-stat.go.jp/dbview?sid=0003445078)
 
 ## Output data<br>（出力データ）
 [**National data（全国データ）**：COVID-19_JP.csv](https://github.com/u-10bei/covid-19_JPdata/blob/main/data/COVID-19_JP.csv)<br>
