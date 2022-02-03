@@ -11,9 +11,8 @@ c("https://www3.nhk.or.jp/n-data/opendata/coronavirus/") -> NHKURL
 NHKURL |> paste("nhk_news_covid19_prefectures_daily_data.csv",sep="") |>
   read_csv() -> NHKP
 # 人口データの読込（同一リポジトリ内）
-c("data/Population_Pref_20191001.csv") |>
-  read_csv(locale(encoding="UTF-8")) |>
-  select(X2,X3) -> POP
+c("data/FEH_00200521_20201001.csv") |> read_csv() |>
+  select(名称,総数) -> POP
 
 # 列名の再定義
 c("Date","PrefCode","Pref","Positive","Pos.cumulative",
@@ -35,8 +34,8 @@ NHKP |> filter(NHKP$Date == last(NHKP$Date)) |>
   summarise(Pos=sum(Positive)) -> NHKN
 NHKT |> inner_join(NHKN,by=c("Pref"="Pref")) |>
   inner_join(POP,by=c("Pref"="Pref")) |>
-  mutate(per100K7=Pos7/Population*100) |>
-  mutate(per100K=Pos/Population*100) |>
+  mutate(per100K7=Pos7/(Population/100000)) |>
+  mutate(per100K=Pos/(Population/100000)) |>
   inner_join(NHKPP,by=c("Pref"="Pref")) -> NHKTT
   NHKTT[order(NHKTT$per100K7,decreasing=T),] -> NHKTT
 
