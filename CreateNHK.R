@@ -12,12 +12,11 @@ NHKURL |> paste("nhk_news_covid19_prefectures_daily_data.csv",sep="") |>
   read_csv() -> NHKP
 # 人口データの読込（同一リポジトリ内）
 c("data/FEH_00200521_20201001.csv") |> read_csv() |>
-  select(名称,総数) -> POP
+  select(Pref,Population) -> POP
 
 # 列名の再定義
 c("Date","PrefCode","Pref","Positive","Pos.cumulative",
   "Deaths","Deaths.cumulative","Pos.per100K") -> colnames(NHKP)
-c("Pref","Population") -> colnames(POP)
 
 # データの整形
 as.Date(NHKP$Date) -> NHKP$Date
