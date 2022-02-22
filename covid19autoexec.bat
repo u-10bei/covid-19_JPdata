@@ -12,7 +12,7 @@ copy /y COVID-19_JP.csv C:\Users\holy1\Documents\R\u-10bei.github.io\datas
 copy /y COVID-19_KTQ.csv C:\Users\holy1\Documents\R\u-10bei.github.io\datas
 copy /y COVID-19_PREF.csv C:\Users\holy1\Documents\R\u-10bei.github.io\datas
 cd C:\Users\holy1\Documents\R\u-10bei.github.io
-set A=Improved 
+set A=copy 
 set B=%date%
 set C="%A%%B%"
 git add .
