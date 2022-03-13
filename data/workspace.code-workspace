@@ -1,10 +1,13 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "..\\..\\u-10bei.github.io"
 		},
 		{
-			"path": "..\\..\\..\\CodeFolder"
+			"path": "..\\..\\Sake_Map"
+		},
+		{
+			"path": ".."
 		}
 	],
 	"settings": {}
