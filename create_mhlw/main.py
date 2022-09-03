@@ -47,11 +47,11 @@ JPdata_all = mhlwC.merge(mhlwT,on='Date',how='left') \
   .fillna('')
 
 # 全国データの書き出し
-JPdata_all.query('Pref == "ALL"').to_csv('../data/COVID-19_JP.csv')
+JPdata_all.query('Pref == "ALL"').to_csv('../data/COVID-19_JP.csv',index=False)
 
 # 各県の状況の書き出し
 JPdata_all[['Date','Pref','Positive','Inpatient','Discharged','Unconfirmed']] \
-  .query('Pref != "ALL"').to_csv('../data/COVID-19_PREF.csv')
+  .query('Pref != "ALL"').to_csv('../data/COVID-19_PREF.csv',index=False)
 
 # 北九州データ
 # オープンデータのあるＵＲＬを変数に格納
@@ -75,4 +75,4 @@ ktqN.set_axis(['Date','code','Pref','City','Negative'], axis=1,inplace = True)
 ktqdata = pd.merge(ktqT,ktqN)[['Date','Tested','Negative']]
 ktqdata['Positive']=ktqdata['Tested']-ktqdata['Negative']
 ktqdata['Prate']=ktqdata['Positive']/ktqdata['Tested']*100
-ktqdata.to_csv('../data/COVID-19_KTQ.csv')
+ktqdata.to_csv('../data/COVID-19_KTQ.csv',index=False)
