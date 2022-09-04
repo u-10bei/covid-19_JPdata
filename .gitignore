@@ -138,3 +138,4 @@ dmypy.json
 credential.py
 covid19autoexec.bat
 covid19NHKexec.bat
+*autoexec.py
