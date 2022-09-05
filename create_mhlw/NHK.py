@@ -12,10 +12,10 @@ NHKurl = 'https://www3.nhk.or.jp/n-data/opendata/coronavirus/' \
 popurl = '../data/FEH_00200521_20201001.csv'
 
 # ネット上のファイル読み込み
-NHKP = pd.read_csv(NHKurl,dtype=str)
+NHKP = pd.read_csv(NHKurl)
 
 # 人口データの読込（同一リポジトリ内）
-POP = pd.read_csv(popurl,dtype=str)[['Pref','Population']]
+POP = pd.read_csv(popurl,thousands=',')[['Pref','Population']]
 
 # 列名の再定義
 NHKP.set_axis(['Date','PrefCode','Pref','Positive','Pos.cumulative',
@@ -24,62 +24,26 @@ NHKP.set_axis(['Date','PrefCode','Pref','Positive','Pos.cumulative',
 # データの整形
 NHKP['Date'] = pd.to_datetime(NHKP['Date'])
 
-# データフレームを縦持ちに変更
-mhlwC = pd.melt(mhlwCC, id_vars='Date',var_name='Pref',value_name='Positive')
-mhlwD = pd.melt(mhlwDD, id_vars='Date',var_name='Pref',value_name='Deaths.cumulative')
+from datetime import date,timedelta
+last7 = NHKP['Date'].max()-timedelta(days=7)
+NHKP7 = NHKP[NHKP['Date'] > last7]
+NHKP7['Date2'] = NHKP7['Date'].dt.strftime('%Y-%m-%d')
 
-mhlwR1 = mhlwRR.filter(like='inpatient',axis=1) \
-  .reset_index() \
-  .melt(id_vars='Date',var_name='Pref',value_name='Inpatient')
-mhlwR1['Pref'] = mhlwR1['Pref'].str[1:].str.extract('(.+)\)', expand=True)
-mhlwR2 = mhlwRR.filter(like='Discharged',axis=1) \
-  .reset_index() \
-  .melt(id_vars='Date',var_name='Pref',value_name='Discharged')
-mhlwR2['Pref'] = mhlwR2['Pref'].str[1:].str.extract('(.+)\)', expand=True)
-mhlwR3 = mhlwRR.filter(like='confirmed',axis=1) \
-  .reset_index() \
-  .melt(id_vars='Date',var_name='Pref',value_name='Unconfirmed')
-mhlwR3['Pref'] = mhlwR3['Pref'].str[1:].str.extract('(.+)\)', expand=True)
+NHKT = NHKP7[['Pref','Positive']].groupby('Pref').agg('sum') \
+  .rename(columns={'Positive': 'Pos7'})
+NHKPP = NHKP7.pivot(index='Pref', columns='Date2', values='Positive') \
+  .reset_index()
+
+NHKN = NHKP[NHKP['Date'] == NHKP['Date'].max()][['Pref','Positive']] \
+  .rename(columns={'Positive': 'Pos'})
 
 # データの結合
-JPdata_all = mhlwC.merge(mhlwT,on='Date',how='left') \
-  .merge(mhlwR1, on=['Date','Pref'],how='left') \
-  .merge(mhlwR2, on=['Date','Pref'],how='left') \
-  .merge(mhlwR3, on=['Date','Pref'],how='left') \
-  .merge(mhlwD, on=['Date','Pref'],how='left') \
-  .fillna('')
-
-# 全国データの書き出し
-JPdata_all.query('Pref == "ALL"').to_csv('../data/COVID-19_JP.csv',index=False)
-JPdata_all.query('Pref == "ALL"').to_csv(cred.HP_URL+'/COVID-19_JP.csv',index=False)
+NHKT1 = NHKT.merge(NHKN,on='Pref',how='inner') \
+  .merge(POP,on='Pref',how='inner')
+NHKT1['per100K7']=NHKT1['Pos7']/(NHKT1['Population']/100000)
+NHKT1['per100K']=NHKT1['Pos']/(NHKT1['Population']/100000)
+NHKTT = pd.merge(NHKT1, NHKPP, on='Pref',how='inner') \
+  .sort_values('per100K7', ascending=False)
 
 # 各県の状況の書き出し
-JPdata_all[['Date','Pref','Positive','Inpatient','Discharged','Unconfirmed']] \
-  .query('Pref != "ALL"').to_csv('../data/COVID-19_PREF.csv',index=False)
-JPdata_all[['Date','Pref','Positive','Inpatient','Discharged','Unconfirmed']] \
-  .query('Pref != "ALL"').to_csv(cred.HP_URL+'/COVID-19_PREF.csv',index=False)
-
-# 北九州データ
-# オープンデータのあるＵＲＬを変数に格納
-ktqURL = 'https://ckan.open-governmentdata.org/dataset/'
-ktqURL_t = ktqURL + 'bdb93937-3522-4c54-bf99-1ff24f51eb9d/' \
-  'resource/1bbf3ac2-0a3c-4846-a209-95f7d752e90e/' \
-  'download/401005_kitakyushu_covid19_test_count.csv'
-ktqURL_n = ktqURL + '550f889f-f758-41e5-83c0-2e631d41af06/' \
-  'resource/888afc2d-61ba-4f62-8494-c8022fcd8548/' \
-  'download/401005_kitakyushu_covid19_confirm_negative.csv'
-
-# ネット上のファイル読み込み
-ktqT = pd.read_csv(ktqURL_t,encoding="cp932")
-ktqN = pd.read_csv(ktqURL_n,encoding="cp932")
-
-# 列名の再定義
-ktqT.set_axis(['Date','code','Pref','City','Tested'], axis=1,inplace = True)
-ktqN.set_axis(['Date','code','Pref','City','Negative'], axis=1,inplace = True)
-
-# データの結合と陽性者数の作成、書き出し
-ktqdata = pd.merge(ktqT,ktqN)[['Date','Tested','Negative']]
-ktqdata['Positive']=ktqdata['Tested']-ktqdata['Negative']
-ktqdata['Prate']=ktqdata['Positive']/ktqdata['Tested']*100
-ktqdata.to_csv('../data/COVID-19_KTQ.csv',index=False)
-ktqdata.to_csv(cred.HP_URL+'/COVID-19_KTQ.csv',index=False)
+NHKTT.to_csv('../data/COVID-19_NHK.csv',index=False)
