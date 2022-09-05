@@ -47,3 +47,4 @@ NHKTT = pd.merge(NHKT1, NHKPP, on='Pref',how='inner') \
 
 # 各県の状況の書き出し
 NHKTT.to_csv('../data/COVID-19_NHK.csv',index=False)
+NHKTT.to_csv(cred.HP_URL+'/COVID-19_NHK.csv',index=False)
