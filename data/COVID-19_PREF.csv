@@ -1000,6 +1000,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Hokkaido,925,17829,717238,28068
 2022/10/11,Hokkaido,961,17826,717238,29029
 2022/10/12,Hokkaido,4023,17809,717238,33062
+2022/10/13,Hokkaido,3574,17819,717238,36624
 2020/1/16,Aomori,0,,,
 2020/1/17,Aomori,0,,,
 2020/1/18,Aomori,0,,,
@@ -2001,6 +2002,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Aomori,113,4245,151129,3703
 2022/10/11,Aomori,161,4240,151129,3869
 2022/10/12,Aomori,554,4244,151129,4419
+2022/10/13,Aomori,462,4243,151129,4882
 2020/1/16,Iwate,0,,,
 2020/1/17,Iwate,0,,,
 2020/1/18,Iwate,0,,,
@@ -3002,6 +3004,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Iwate,112,3226,103563,4029
 2022/10/11,Iwate,99,3223,103563,4131
 2022/10/12,Iwate,480,3220,103563,4612
+2022/10/13,Iwate,372,3209,103563,4995
 2020/1/16,Miyagi,0,,,
 2020/1/17,Miyagi,0,,,
 2020/1/18,Miyagi,0,,,
@@ -4003,6 +4006,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Miyagi,349,21399,204624,39021
 2022/10/11,Miyagi,297,21398,204624,39318
 2022/10/12,Miyagi,936,21374,204624,40278
+2022/10/13,Miyagi,978,21357,204624,41273
 2020/1/16,Akita,0,,,
 2020/1/17,Akita,0,,,
 2020/1/18,Akita,0,,,
@@ -5004,6 +5008,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Akita,94,8449,89825,5203
 2022/10/11,Akita,53,8446,89825,5271
 2022/10/12,Akita,884,8443,89825,6158
+2022/10/13,Akita,558,8457,89825,6702
 2020/1/16,Yamagata,0,,,
 2020/1/17,Yamagata,0,,,
 2020/1/18,Yamagata,0,,,
@@ -6005,6 +6010,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Yamagata,183,6578,90443,12641
 2022/10/11,Yamagata,223,6578,90443,12931
 2022/10/12,Yamagata,1029,6575,90443,13963
+2022/10/13,Yamagata,765,6572,90443,14730
 2020/1/16,Fukushima,0,,,
 2020/1/17,Fukushima,0,,,
 2020/1/18,Fukushima,0,,,
@@ -7006,6 +7012,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Fukushima,326,3568,180682,7557
 2022/10/11,Fukushima,302,3568,180682,7859
 2022/10/12,Fukushima,986,3568,180682,8845
+2022/10/13,Fukushima,835,3568,180682,9680
 2020/1/16,Ibaraki,0,,,
 2020/1/17,Ibaraki,0,,,
 2020/1/18,Ibaraki,0,,,
@@ -8007,6 +8014,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Ibaraki,526,19925,301424,48606
 2022/10/11,Ibaraki,288,19911,301424,48893
 2022/10/12,Ibaraki,224,19851,301424,49177
+2022/10/13,Ibaraki,1198,19815,301424,50409
 2020/1/16,Tochigi,0,,,
 2020/1/17,Tochigi,0,,,
 2020/1/18,Tochigi,0,,,
@@ -9008,6 +9016,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Tochigi,167,5379,215803,6677
 2022/10/11,Tochigi,177,5377,215803,6858
 2022/10/12,Tochigi,753,5375,215803,7612
+2022/10/13,Tochigi,650,5333,215803,8300
 2020/1/16,Gunma,0,,,
 2020/1/17,Gunma,0,,,
 2020/1/18,Gunma,0,,,
@@ -10009,6 +10018,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Gunma,169,8022,225131,7844
 2022/10/11,Gunma,367,8002,225131,8145
 2022/10/12,Gunma,789,7991,225131,8944
+2022/10/13,Gunma,755,7975,225131,9712
 2020/1/16,Saitama,0,,,
 2020/1/17,Saitama,0,,,
 2020/1/18,Saitama,0,,,
@@ -11010,6 +11020,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Saitama,660,17887,1160893,23839
 2022/10/11,Saitama,581,17845,1160893,24459
 2022/10/12,Saitama,2375,17829,1160893,26842
+2022/10/13,Saitama,2008,17821,1160893,28852
 2020/1/16,Chiba,0,,,
 2020/1/17,Chiba,0,,,
 2020/1/18,Chiba,0,,,
@@ -12011,6 +12022,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Chiba,491,16314,904076,36192
 2022/10/11,Chiba,533,16314,904076,36728
 2022/10/12,Chiba,1896,16320,904076,38615
+2022/10/13,Chiba,1746,16140,904076,40536
 2020/1/16,Tokyo,0,,,
 2020/1/17,Tokyo,0,,,
 2020/1/18,Tokyo,0,,,
@@ -13012,6 +13024,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Tokyo,1372,48630,3093983,50154
 2022/10/11,Tokyo,1504,48543,3093983,52271
 2022/10/12,Tokyo,4790,48380,3093983,57218
+2022/10/13,Tokyo,4338,48208,3093983,61723
 2020/1/16,Kanagawa,1,,,
 2020/1/17,Kanagawa,0,,,
 2020/1/18,Kanagawa,0,,,
@@ -14013,6 +14026,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kanagawa,832,14356,1450734,38434
 2022/10/11,Kanagawa,941,13896,1450734,39821
 2022/10/12,Kanagawa,2355,13453,1450734,42619
+2022/10/13,Kanagawa,2453,11777,1450734,46745
 2020/1/16,Niigata,0,,,
 2020/1/17,Niigata,0,,,
 2020/1/18,Niigata,0,,,
@@ -15014,6 +15028,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Niigata,233,6491,223993,8055
 2022/10/11,Niigata,255,6493,223993,8312
 2022/10/12,Niigata,971,6464,223993,9312
+2022/10/13,Niigata,897,6435,223993,10238
 2020/1/16,Toyama,0,,,
 2020/1/17,Toyama,0,,,
 2020/1/18,Toyama,0,,,
@@ -16015,6 +16030,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Toyama,59,3202,123822,4952
 2022/10/11,Toyama,189,3192,123822,5076
 2022/10/12,Toyama,574,3185,123822,5656
+2022/10/13,Toyama,546,3181,123822,6206
 2020/1/16,Ishikawa,0,,,
 2020/1/17,Ishikawa,0,,,
 2020/1/18,Ishikawa,0,,,
@@ -17016,6 +17032,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Ishikawa,159,3928,155716,5221
 2022/10/11,Ishikawa,176,3924,155716,5399
 2022/10/12,Ishikawa,671,3920,155716,6074
+2022/10/13,Ishikawa,594,3915,155716,6672
 2020/1/16,Fukui,0,,,
 2020/1/17,Fukui,0,,,
 2020/1/18,Fukui,0,,,
@@ -18017,6 +18034,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Fukui,77,1879,110918,3287
 2022/10/11,Fukui,130,1869,110918,3426
 2022/10/12,Fukui,293,1871,110918,3716
+2022/10/13,Fukui,342,1859,110918,4070
 2020/1/16,Yamanashi,0,,,
 2020/1/17,Yamanashi,0,,,
 2020/1/18,Yamanashi,0,,,
@@ -19018,6 +19036,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Yamanashi,99,1224,93672,2478
 2022/10/11,Yamanashi,85,1222,93672,2565
 2022/10/12,Yamanashi,354,1216,93672,2925
+2022/10/13,Yamanashi,326,1227,93672,3239
 2020/1/16,Nagano,0,,,
 2020/1/17,Nagano,0,,,
 2020/1/18,Nagano,0,,,
@@ -20019,6 +20038,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Nagano,351,4933,209492,136
 2022/10/11,Nagano,358,4960,209816,132
 2022/10/12,Nagano,982,4688,210446,756
+2022/10/13,Nagano,1378,4529,211587,1147
 2020/1/16,Gifu,0,,,
 2020/1/17,Gifu,0,,,
 2020/1/18,Gifu,0,,,
@@ -21020,6 +21040,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Gifu,251,4981,284881,8177
 2022/10/11,Gifu,306,4981,284881,8483
 2022/10/12,Gifu,985,4981,284881,9468
+2022/10/13,Gifu,844,4981,284881,10310
 2020/1/16,Shizuoka,0,,,
 2020/1/17,Shizuoka,0,,,
 2020/1/18,Shizuoka,0,,,
@@ -22021,6 +22042,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Shizuoka,390,8243,478956,12635
 2022/10/11,Shizuoka,225,8247,478956,12855
 2022/10/12,Shizuoka,940,8239,478956,13802
+2022/10/13,Shizuoka,1364,8225,478956,15180
 2020/1/16,Aichi,0,,,
 2020/1/17,Aichi,0,,,
 2020/1/18,Aichi,0,,,
@@ -23022,6 +23044,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Aichi,366,11277,1362602,109
 2022/10/11,Aichi,531,10654,1364249,656
 2022/10/12,Aichi,2686,10408,1364861,1664
+2022/10/13,Aichi,2112,8528,1367272,3245
 2020/1/16,Mie,0,,,
 2020/1/17,Mie,0,,,
 2020/1/18,Mie,0,,,
@@ -24023,6 +24046,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Mie,372,10138,226621,21318
 2022/10/11,Mie,153,10146,226621,21450
 2022/10/12,Mie,202,10150,226621,21648
+2022/10/13,Mie,937,10156,226621,22578
 2020/1/16,Shiga,0,,,
 2020/1/17,Shiga,0,,,
 2020/1/18,Shiga,0,,,
@@ -25024,6 +25048,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Shiga,134,5306,225722,5847
 2022/10/11,Shiga,119,5304,225722,5967
 2022/10/12,Shiga,699,5301,225722,6666
+2022/10/13,Shiga,533,5298,225722,7201
 2020/1/16,Kyoto,0,,,
 2020/1/17,Kyoto,0,,,
 2020/1/18,Kyoto,0,,,
@@ -26025,6 +26050,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kyoto,117,12899,459222,8658
 2022/10/11,Kyoto,98,12898,459222,8754
 2022/10/12,Kyoto,708,12899,459222,9458
+2022/10/13,Kyoto,688,12882,459222,10160
 2020/1/16,Osaka,0,,,
 2020/1/17,Osaka,0,,,
 2020/1/18,Osaka,0,,,
@@ -27026,6 +27052,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Osaka,755,28666,2032077,49393
 2022/10/11,Osaka,976,27254,2032077,51777
 2022/10/12,Osaka,3436,27308,2032077,55156
+2022/10/13,Osaka,3313,27474,2032077,58297
 2020/1/16,Hyogo,0,,,
 2020/1/17,Hyogo,0,,,
 2020/1/18,Hyogo,0,,,
@@ -28027,6 +28054,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Hyogo,416,13000,986750,13886
 2022/10/11,Hyogo,248,12987,986750,14147
 2022/10/12,Hyogo,1151,12939,986750,15343
+2022/10/13,Hyogo,1602,12935,986750,16943
 2020/1/16,Nara,0,,,
 2020/1/17,Nara,0,,,
 2020/1/18,Nara,0,,,
@@ -29028,6 +29056,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Nara,86,29860,195268,4344
 2022/10/11,Nara,127,29860,195268,4471
 2022/10/12,Nara,388,29864,195268,4855
+2022/10/13,Nara,560,29858,195268,5418
 2020/1/16,Wakayama,0,,,
 2020/1/17,Wakayama,0,,,
 2020/1/18,Wakayama,0,,,
@@ -30029,6 +30058,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Wakayama,164,66,129448,5782
 2022/10/11,Wakayama,122,63,129448,5907
 2022/10/12,Wakayama,204,63,129448,6110
+2022/10/13,Wakayama,509,65,129448,6617
 2020/1/16,Tottori,0,,,
 2020/1/17,Tottori,0,,,
 2020/1/18,Tottori,0,,,
@@ -31030,6 +31060,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Tottori,64,9190,44778,10534
 2022/10/11,Tottori,95,9184,44778,10635
 2022/10/12,Tottori,264,9184,44778,10898
+2022/10/13,Tottori,236,9195,44778,11122
 2020/1/16,Shimane,0,,,
 2020/1/17,Shimane,0,,,
 2020/1/18,Shimane,0,,,
@@ -32031,6 +32062,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Shimane,67,1641,82612,72
 2022/10/11,Shimane,86,1212,83108,88
 2022/10/12,Shimane,364,1077,83328,366
+2022/10/13,Shimane,319,1232,83535,321
 2020/1/16,Okayama,0,,,
 2020/1/17,Okayama,0,,,
 2020/1/18,Okayama,0,,,
@@ -33032,6 +33064,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Okayama,306,3912,273230,2375
 2022/10/11,Okayama,185,3912,273230,2560
 2022/10/12,Okayama,880,3912,273230,3439
+2022/10/13,Okayama,960,3912,273230,4398
 2020/1/16,Hiroshima,0,,,
 2020/1/17,Hiroshima,0,,,
 2020/1/18,Hiroshima,0,,,
@@ -34033,6 +34066,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Hiroshima,693,16011,409656,11404
 2022/10/11,Hiroshima,460,16011,409656,11764
 2022/10/12,Hiroshima,415,16007,409656,12183
+2022/10/13,Hiroshima,1297,15973,409656,13514
 2020/1/16,Yamaguchi,0,,,
 2020/1/17,Yamaguchi,0,,,
 2020/1/18,Yamaguchi,0,,,
@@ -35034,6 +35068,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Yamaguchi,150,2953,158495,5363
 2022/10/11,Yamaguchi,166,2949,158495,5244
 2022/10/12,Yamaguchi,477,2950,158495,5719
+2022/10/13,Yamaguchi,422,2948,158495,6142
 2020/1/16,Tokushima,0,,,
 2020/1/17,Tokushima,0,,,
 2020/1/18,Tokushima,0,,,
@@ -36035,6 +36070,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Tokushima,39,1348,90741,2276
 2022/10/11,Tokushima,65,1347,90741,2342
 2022/10/12,Tokushima,311,1333,90741,2667
+2022/10/13,Tokushima,221,1326,90741,2895
 2020/1/16,Kagawa,0,,,
 2020/1/17,Kagawa,0,,,
 2020/1/18,Kagawa,0,,,
@@ -37036,6 +37072,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kagawa,53,2625,138120,3358
 2022/10/11,Kagawa,89,2613,138120,3255
 2022/10/12,Kagawa,355,2607,138120,3616
+2022/10/13,Kagawa,291,2586,138120,3928
 2020/1/16,Ehime,0,,,
 2020/1/17,Ehime,0,,,
 2020/1/18,Ehime,0,,,
@@ -38037,6 +38074,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Ehime,126,3756,156705,4117
 2022/10/11,Ehime,114,3754,156705,4233
 2022/10/12,Ehime,504,3755,156705,4736
+2022/10/13,Ehime,369,3746,156705,5114
 2020/1/16,Kochi,0,,,
 2020/1/17,Kochi,0,,,
 2020/1/18,Kochi,0,,,
@@ -39038,6 +39076,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kochi,46,5050,94023,2170
 2022/10/11,Kochi,68,5047,94023,2241
 2022/10/12,Kochi,247,5044,94023,2490
+2022/10/13,Kochi,155,5032,94023,2657
 2020/1/16,Fukuoka,0,,,
 2020/1/17,Fukuoka,0,,,
 2020/1/18,Fukuoka,0,,,
@@ -40039,6 +40078,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Fukuoka,331,26868,1029285,30232
 2022/10/11,Fukuoka,280,26852,1029285,30367
 2022/10/12,Fukuoka,1185,26809,1029285,31594
+2022/10/13,Fukuoka,1573,26779,1029285,33191
 2020/1/16,Saga,0,,,
 2020/1/17,Saga,0,,,
 2020/1/18,Saga,0,,,
@@ -41040,6 +41080,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Saga,39,12779,125171,20948
 2022/10/11,Saga,51,12776,125171,21003
 2022/10/12,Saga,330,12776,125171,21333
+2022/10/13,Saga,261,12770,125171,21600
 2020/1/16,Nagasaki,0,,,
 2020/1/17,Nagasaki,0,,,
 2020/1/18,Nagasaki,0,,,
@@ -42041,6 +42082,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Nagasaki,124,21400,177499,15584
 2022/10/11,Nagasaki,138,21402,177499,15720
 2022/10/12,Nagasaki,354,21380,177499,16096
+2022/10/13,Nagasaki,357,21364,177499,16469
 2020/1/16,Kumamoto,0,,,
 2020/1/17,Kumamoto,0,,,
 2020/1/18,Kumamoto,0,,,
@@ -43042,6 +43084,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kumamoto,128,6985,320699,5916
 2022/10/11,Kumamoto,197,6985,320699,6028
 2022/10/12,Kumamoto,740,6933,320699,6816
+2022/10/13,Kumamoto,517,6912,320699,7353
 2020/1/16,Oita,0,,,
 2020/1/17,Oita,0,,,
 2020/1/18,Oita,0,,,
@@ -44043,6 +44086,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Oita,123,2170,172076,3577
 2022/10/11,Oita,107,2170,172076,3684
 2022/10/12,Oita,341,2168,172076,4027
+2022/10/13,Oita,369,2161,172076,4402
 2020/1/16,Miyazaki,0,,,
 2020/1/17,Miyazaki,0,,,
 2020/1/18,Miyazaki,0,,,
@@ -45044,6 +45088,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Miyazaki,119,3821,189320,4361
 2022/10/11,Miyazaki,134,3825,189320,4491
 2022/10/12,Miyazaki,312,3823,189320,4805
+2022/10/13,Miyazaki,300,3815,189320,5111
 2020/1/16,Kagoshima,0,,,
 2020/1/17,Kagoshima,0,,,
 2020/1/18,Kagoshima,0,,,
@@ -46045,6 +46090,7 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Kagoshima,181,1571,286186,14199
 2022/10/11,Kagoshima,144,1475,286186,14439
 2022/10/12,Kagoshima,495,1368,286186,15041
+2022/10/13,Kagoshima,394,1355,286186,15448
 2020/1/16,Okinawa,0,,,
 2020/1/17,Okinawa,0,,,
 2020/1/18,Okinawa,0,,,
@@ -47046,3 +47092,4 @@ Date,Pref,Positive,Inpatient,Discharged,Unconfirmed
 2022/10/10,Okinawa,104,2972,494076,5828
 2022/10/11,Okinawa,159,2953,494076,6008
 2022/10/12,Okinawa,613,2944,494076,6630
+2022/10/13,Okinawa,412,2918,494076,7065
